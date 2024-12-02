@@ -1,14 +1,35 @@
 # Turborepo Tailwind CSS starter
 
-This is an official starter Turborepo.
+This is an unofficial starter Turborepo with additional features.
 
 ## Using this example
 
 Run the following command:
 
 ```sh
-npx create-turbo@latest -e with-tailwind
+git clone git@github.com:matthieuGravy/template-turbo-next-shadcn-rust.git
+cd template-turbo-next-shadcn-rust
+git remote remove origin
 ```
+
+```sh
+# Install dependencies
+npm install
+# or
+pnpm install
+# or
+yarn install
+```
+
+```sh
+# start all apps
+turbo run dev
+```
+
+Note: You'll need to manually add the following features after installation:
+
+- [shadcn/ui](https://ui.shadcn.com/) components
+- Rust integration
 
 ## What's inside?
 
@@ -16,9 +37,9 @@ This Turborepo includes the following packages/apps:
 
 ### Apps and Packages
 
-- `docs`: a [Next.js](https://nextjs.org/) app with [Tailwind CSS](https://tailwindcss.com/)
-- `web`: another [Next.js](https://nextjs.org/) app with [Tailwind CSS](https://tailwindcss.com/)
-- `ui`: a stub React component library with [Tailwind CSS](https://tailwindcss.com/) shared by both `web` and `docs` applications
+- `docs`: a [Next.js](https://nextjs.org/) app with [Tailwind CSS](https://tailwindcss.com/) and shadcn/ui
+- `web`: another [Next.js](https://nextjs.org/) app with [Tailwind CSS](https://tailwindcss.com/) and shadcn/ui
+- `ui`: a React component library with [Tailwind CSS](https://tailwindcss.com/) and shadcn/ui shared by both applications
 - `@repo/eslint-config`: `eslint` configurations (includes `eslint-config-next` and `eslint-config-prettier`)
 - `@repo/typescript-config`: `tsconfig.json`s used throughout the monorepo
 
@@ -56,3 +77,18 @@ This Turborepo has some additional tools already setup for you:
 - [TypeScript](https://www.typescriptlang.org/) for static type checking
 - [ESLint](https://eslint.org/) for code linting
 - [Prettier](https://prettier.io) for code formatting
+
+### Additional Features
+
+This template includes several enhancements to the original Turborepo starter:
+
+- [shadcn/ui](https://ui.shadcn.com/) for beautiful, accessible components
+- Rust integration for enhanced performance
+
+## Support this project
+
+If you find this project useful, please consider giving it a star on GitHub. It helps others discover the project and shows your support!
+
+[![GitHub Stars](https://img.shields.io/github/stars/matthieuGravy/template-turbo-next-shadcn-rust.svg?style=social&label=Star)](https://github.com/matthieuGravy/template-turbo-next-shadcn-rust)
+
+Feel free to share it with your friends and colleagues!

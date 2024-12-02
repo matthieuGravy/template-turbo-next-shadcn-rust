@@ -34,3 +34,7 @@ yarn-error.log*
 
 # ui
 dist/
+
+# cargo
+target/
+Cargo.lock
